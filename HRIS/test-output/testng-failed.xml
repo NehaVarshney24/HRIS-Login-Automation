@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.qait.HRIS.AppTest">
+        <methods>
+          <include name="Incorrect_password_test"/>
+          <include name="Blank_Password_test"/>
+          <include name="Correct_credientials_test"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- com.qait.HRIS.AppTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
