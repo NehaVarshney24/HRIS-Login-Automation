@@ -3,6 +3,9 @@ package com.qait.HRIS;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 /**
  * Hello world!
@@ -51,6 +54,12 @@ public class App
 		return new TestTimesheet(driver);
 	}
 	
-	
+	public void Logout() {
+		
+		driver.findElement(By.className("profile-btn")).click();
+		WebDriverWait wait=new WebDriverWait(driver,10);
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.className("fa"))));
+		driver.findElement(By.className("fa-sign-out")).click();
+	}
 	
 }
